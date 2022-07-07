@@ -152,7 +152,7 @@ export function IndexCalculadora() {
             </div>
           </div>
 
-          <YoutubeEmbed />
+          
 
           <div className="StartBackground">
             <div className="FinalPart">
