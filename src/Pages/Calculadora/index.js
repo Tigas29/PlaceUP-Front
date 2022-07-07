@@ -128,7 +128,7 @@ export function Calculator() {
                   }
                 />
 
-                <span className='span-total'>
+                <span className="span-total">
                   Valor unitário:{" "}
                   {!(result / unidade)
                     ? "" && 0
@@ -162,9 +162,15 @@ export function Calculator() {
                   <p>Máximo</p>
                 </div>
                 <div className="TablePlaceUP">
-                  <p>{!result ? "" : formatter.format(result - result / 5)}</p>
-                  <p>{!result ? "" : formatter.format(result + result / 5)}</p>
-                  <p>{!result ? "" : formatter.format(result + result / 3)}</p>
+                  <p>
+                    {!unidade ? "" : formatter.format(unidade - unidade / 5)}
+                  </p>
+                  <p>
+                    {!unidade ? "" : formatter.format(unidade + unidade / 5)}
+                  </p>
+                  <p>
+                    {!unidade ? "" : formatter.format(unidade + unidade / 3)}
+                  </p>
                 </div>
               </div>
             </div>
